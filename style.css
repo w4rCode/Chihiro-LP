@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-texto);
+}
+html
+{
+    overflow-x: hidden;
+}
+
+:root{
+    --cor-texto: #F9F9F9;
+    --cor-secundaria: #658E76;
+}
+body{
+    background: linear-gradient(90deg, rgba(98,142,117,1) 0%, rgba(26,72,85,1) 100%);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15%;
+}
+#logo{
+    width: 100px;
+    height: 48.11px;
+}
+#links{
+    display: flex;
+    gap: 40px;
+}
+li{
+    list-style: none;
+}
+.social-img{
+    width: 24px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15%;   
+    gap: 40px;
+}
+.container-text{
+    max-width: 445px;
+}
+.container-text h1{
+font-size: 5rem;
+}
+.container-text h2{
+    font-size: 1.8rem;
+}
+.container-text p{
+    padding: 25px 0px;
+    font-size: 1rem;
+    line-height: 28.8px;
+}
+.container-img img{
+    width: 500px;
+    height: 600px;
+}
+.btns{
+    display: flex;
+    gap: 25px;
+}
+#btn1{
+    width: 225px;
+    height: 45px;
+    letter-spacing: 2px;
+    transform:skew(-30deg);
+    background-color: #72a689;
+    cursor: pointer;
+    border: none;
+    transition: .2s ease-in;
+}
+#btn1:hover{
+    background-color: #80b194;
+}
+.btn2{
+    width: 225px;
+    height: 45px;
+    letter-spacing: 2px;
+    transform:skew(-30deg);
+    background: transparent;
+    border: 2px solid #72a689;
+    cursor: pointer;
+    transition: .5s ease-in ;
+}
+.btn2:hover{
+    box-shadow: inset 225px 0 0 0 #72a689;
+}
+#videoContainer {
+        display: none; 
+        position: absolute; 
+        padding: 7% 18%;
+        top: 0%;
+        left: 0%;
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.945);
+        z-index: 9999; 
+    }
+    .videosize{
+        width: 100%;
+        height: auto;
+    }
+    #closeButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #658E76;
+        color: #ffffff;
+        border-radius: 10px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        z-index: 10000; /* Certifique-se de que o botão de fechar está acima do vídeo */
+    }
+@media(max-width: 1190px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .btn2{
+        display: hidden;
+        visibility: hidden;
+    }
+}
+@media(max-width: 515px){
+    body{
+        overflow-x: hidden;
+    }
+     #logo{
+        visibility: hidden;
+    }
+    .container-text h1{
+        font-size: 3.5rem;}
+    .container-text{
+        padding: 0px 40px};
+    .btns{
+        display: flex;
+        justify-content: center;}}

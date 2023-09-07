@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chihiro - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/imagem.png" type="image/icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header class="reveal">
+        <img src="./images/logo.png" alt="logo" id="logo">
+        <nav>
+            <ul id="links">
+                <li><a href="https://www.facebook.com/profile.php?id=61551063866139"> <img src="./images/facebook.svg" alt="facebook" class="social-img"> </a></li>
+                <li><a href="https://www.instagram.com/warcodee/"> <img src="./images/instagram.svg" alt="instagram" class="social-img"> </a></li>
+                <li><a href="https://github.com/w4rCode"> <img src="./images/twitter.svg" alt="twitter" class="social-img"> </a></li>
+                <li><a href="https://github.com/w4rCode"> <img src="./images/youtube.svg" alt="youtube" class="social-img"> </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-text">
+            <h2 class="reveal">Hayão Miyaski</h2>
+            <h1 class="reveal">A VIAGEM DE CHIHIRO</h1>
+            <p class="reveal">Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
+            <div class="btns">
+                <button id="btn1">ASSISTIR AGORA</button>
+                <button class="btn2" id="playButton">ASSISTIR O TRAILER</button>
+                <div id="videoContainer" style="display: none;">
+                    <button id="closeButton">Fechar</button>
+                    <video id="videoPlayer" controls class="videosize">
+                        <source src="./videos/savetubeio-a-viagem-de-chihiro-trailer-dublado-hd_xxbbrlVz.mp4" type="video/mp4">
+                        Seu navegador não suporta a reprodução de vídeo.
+                    </video>
+            </div>
+        </section>
+        <section class="container-img">
+            <img src="./images/imagem.png" alt="imagem principal" class="reveal">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
